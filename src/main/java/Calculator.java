@@ -2,43 +2,39 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        double firstNumber = entered_number("first");
-        double secondNumber = entered_number("second");
-        sum(firstNumber, secondNumber);
-        odd(firstNumber, secondNumber);
-        mult(firstNumber, secondNumber);
-        div(firstNumber, secondNumber);
-        rem(firstNumber, secondNumber);
+        System.out.println("Enter first number");
+        double firstNumber = entered_number();
+        System.out.println("Enter second number");
+        double secondNumber = entered_number();
+        System.out.println("Sum= "+ sum(firstNumber, secondNumber));
+        System.out.println("Odd= "+ odd(firstNumber, secondNumber));
+        System.out.println("Mult= "+ mult(firstNumber, secondNumber));
+        System.out.println("Div= "+ div(firstNumber, secondNumber));
+        System.out.println("Rem= "+ rem(firstNumber, secondNumber));
     }
 
-    public static double entered_number(String count) {
-        System.out.println("Enter " + count + " number");
+    public static double entered_number() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextDouble();
     }
 
-    public static void sum(double firstAddend, double secondAddend) {
-        double sum = firstAddend + secondAddend;
-        System.out.println("Sum =" + sum);
+    public static double sum(double firstAddend, double secondAddend) {
+        return firstAddend + secondAddend;
     }
 
-    public static void odd(double minuend, double subtrahend) {
-        double odd = minuend - subtrahend;
-        System.out.println("Odd =" + odd);
+    public static double odd(double minuend, double subtrahend) {
+        return minuend - subtrahend;
     }
 
-    public static void mult(double multiplicand, double multiplier) {
-        double mult = multiplicand * multiplier;
-        System.out.println("Mult =" + mult);
+    public static double mult(double multiplicand, double multiplier) {
+        return multiplicand * multiplier;
     }
 
-    public static void div(double dividend, double divisor) {
-        double div = dividend / divisor;
-        System.out.println("Div =" + div);
+    public static double div(double dividend, double divisor) {
+        return dividend / divisor;
     }
 
-    public static void rem(double dividend, double divisor) {
-        double rem = dividend % divisor;
-        System.out.println("Rem =" + rem);
+    public static double rem(double dividend, double divisor) {
+        return dividend % divisor;
     }
 }
