@@ -31,10 +31,18 @@ public class Calculator {
     }
 
     public static double div(double dividend, double divisor) {
+        if (divisor == 0) {
+            System.out.println("Can not divide by zero");
+            return 0;
+        }
         return dividend / divisor;
     }
 
     public static double rem(double dividend, double divisor) {
+        if (divisor == 0) {
+            System.out.println("Can not divide by zero");
+            return 0;
+        }
         return dividend % divisor;
     }
 }
