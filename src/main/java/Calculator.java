@@ -6,11 +6,11 @@ public class Calculator {
         double firstNumber = entered_number();
         System.out.println("Enter second number");
         double secondNumber = entered_number();
-        System.out.println("Sum= "+ sum(firstNumber, secondNumber));
-        System.out.println("Odd= "+ odd(firstNumber, secondNumber));
-        System.out.println("Mult= "+ mult(firstNumber, secondNumber));
-        System.out.println("Div= "+ div(firstNumber, secondNumber));
-        System.out.println("Rem= "+ rem(firstNumber, secondNumber));
+        System.out.println("Sum= " + sum(firstNumber, secondNumber));
+        System.out.println("Odd= " + odd(firstNumber, secondNumber));
+        System.out.println("Mult= " + mult(firstNumber, secondNumber));
+        System.out.println("Div= " + div(firstNumber, secondNumber));
+        System.out.println("Rem= " + rem(firstNumber, secondNumber));
     }
 
     public static double entered_number() {
